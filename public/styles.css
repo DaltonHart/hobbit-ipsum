@@ -1,17 +1,39 @@
+@font-face {
+    font-family: 'ringbearermedium';
+    src: url('/fonts/ringm___-webfont.woff2') format('woff2'),
+         url('/fonts/ringm___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     box-sizing: border-box;
+}
+html{
+    background-image: url(hobbit-home.jpg);
 }
 
 body{
     margin: 1em auto;
     width: 50vw;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 1em;
+    color: aliceblue;
 }
-
+h1 {
+    font-size: 6em;
+}
+h1 , p{
+    font-family: 'ringbearermedium';
+    color: aliceblue;
+}
 form{
     margin-bottom: 2em;
 }
 
 .generated-text p{
  margin-bottom: 1em;
+ font-family: 'Fjalla One', sans-serif;
 }
