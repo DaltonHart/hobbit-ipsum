@@ -24,20 +24,19 @@ function GenerateNewText() {
       'Is it nice, my preciousss?',
       'Is it juicy?',
       'Is it scrumptiously crunchable?',
+      'No dragon can resist the fascination of riddling talk and of wasting time trying to understand it.',
+      'You certainly usually find something, if you look, but it is not always quite the something you were after.',
    ];
 }
 
-// Method to the GenerateNewText constructor function that generates a random sentence
 GenerateNewText.prototype.getRandomSentence = function() {
   let randomSentence = this.sentences[Math.floor(Math.random() * this.sentences.length)]
 	return randomSentence;
 }
 
-// Method to the GenerateNewText constructor function that generates a paragraph from random sentences
 GenerateNewText.prototype.getParagraph = function() {
   let paragraph = "";
-  // Set the minimum number of words
-  let minimumCharacterLength = 250;
+  let minimumCharacterLength = 350;
   let firstSentence = true;
   while (paragraph.length < minimumCharacterLength) {
     if (firstSentence) {
@@ -50,14 +49,11 @@ GenerateNewText.prototype.getParagraph = function() {
   return paragraph;
 }
 
-// Method to the GenerateNewText constructor function that gerates multiple paragraphs from paragraphs
 GenerateNewText.prototype.getAllParagraphs = function(numberOfParagraphs) {
   let allParagraphs = [];
-  // Generate the number of paragraphs as specified by the user
   while (allParagraphs.length < numberOfParagraphs) {
     allParagraphs.push(this.getParagraph());
   }
-  // Convert array into HTML string
   let paragraphHTML = "";
   allParagraphs.forEach(function (paragraph) {
     paragraphHTML += "<p>" + paragraph + "</p>";

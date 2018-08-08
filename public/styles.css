@@ -11,14 +11,17 @@
     box-sizing: border-box;
 }
 html{
+    background-color: black;
     background-image: url(hobbit-home.jpg);
+    background-size: cover;
+    
 }
 
 body{
     margin: 1em auto;
     width: 50vw;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.692);
     padding: 1em;
     color: aliceblue;
 }
@@ -36,4 +39,5 @@ form{
 .generated-text p{
  margin-bottom: 1em;
  font-family: 'Fjalla One', sans-serif;
+ text-align: left;
 }

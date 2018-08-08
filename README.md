@@ -1,5 +1,5 @@
-# ipsum-generator
+# Hobbit Ipsum
 
-A simple ipsum generator. Open to easy themeing and configuring. To change what phrases are being generated open the generator.js and edit the this.sentences array. 
+A simple ipsum generator themed around quotes from the hobbit. 
 
 Have fun! 
