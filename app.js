@@ -16,6 +16,6 @@ app.use(express.static('public'));
 app.use(routes);
 
 // set server port
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`server is listening at http://${hostname}:${port}/`);
 })
