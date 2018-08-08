@@ -11,3 +11,7 @@ body{
 form{
     margin-bottom: 2em;
 }
+
+.generated-text p{
+ margin-bottom: 1em;
+}
